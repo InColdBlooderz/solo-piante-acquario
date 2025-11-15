@@ -1,1 +1,70 @@
-<!DOCTYPE html><html><head><link rel='stylesheet' href='assets/css/style.css'></head><body><h1>Acquario Plants</h1><div id='plant-list'></div><script src='assets/js/app.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solo Piante per Acquario</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Solo Piante per Acquario</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="order-info.html">Come ordinare</a>
+        <a href="cart.html">Carrello 🛒 <span id="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Catalogo Piante</h1>
+      <p>Filtra, scegli e aggiungi al carrello. Checkout semplice via PayPal / Bonifico / Carta.</p>
+    </section>
+
+    <section class="controls">
+      <label>
+        Cerca:
+        <input id="search" placeholder="Cerca per nome..." />
+      </label>
+      <label>
+        Difficoltà:
+        <select id="filter-difficulty">
+          <option value="">Tutte</option>
+          <option value="Facile">Facile</option>
+          <option value="Media">Media</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </label>
+      <label>
+        Tipo:
+        <select id="filter-type">
+          <option value="">Tutti</option>
+          <option value="Foreground">Foreground</option>
+          <option value="Midground">Midground</option>
+          <option value="Background">Background</option>
+          <option value="Stem">Stem</option>
+          <option value="Rhizomatous">Rhizomatous</option>
+          <option value="Floating">Floating</option>
+          <option value="Bulb">Bulb</option>
+          <option value="Moss">Moss</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="plant-list" class="catalogo">
+      <!-- JS popola qui le card -->
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Solo Piante per Acquario — Rivenditore ufficiale</p>
+    </footer>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
