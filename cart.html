@@ -1,1 +1,51 @@
-<!DOCTYPE html><html><body><h1>Carrello</h1><div id='cart'></div><script src='assets/js/cart.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrello - Solo Piante per Acquario</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Solo Piante per Acquario</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Procedi al Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Carrello</h1>
+    <div id="cart-container">
+      <!-- JS popola qui -->
+      <table id="cart-table" class="cart-table">
+        <thead>
+          <tr>
+            <th>Pianta</th>
+            <th>Prezzo</th>
+            <th>Quantità</th>
+            <th>Subtotale</th>
+            <th>Rimuovi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>Spese di spedizione: <span id="shipping">€5.00</span></p>
+        <p>Totale: <strong id="cart-total">€0.00</strong></p>
+        <div class="cart-actions">
+          <a class="btn" href="index.html">Continua a comprare</a>
+          <a id="to-checkout" class="btn primary" href="checkout.html">Vai al checkout</a>
+          <button id="empty-cart" class="btn danger">Svuota carrello</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
