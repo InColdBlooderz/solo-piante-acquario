@@ -1,1 +1,79 @@
-<!DOCTYPE html><html><body><h1>Checkout</h1><form id='checkout-form'></form><script src='assets/js/checkout.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout - Solo Piante per Acquario</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Solo Piante per Acquario</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Carrello</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Checkout</h1>
+    <div class="checkout-grid">
+      <section class="checkout-left">
+        <h2>Riepilogo ordine</h2>
+        <div id="checkout-summary">
+          <!-- JS riempie qui: lista articoli e totale -->
+        </div>
+      </section>
+
+      <section class="checkout-right">
+        <h2>Dettagli spedizione e pagamento</h2>
+
+        <!-- Usiamo Formsubmit per inviare la mail. Sostituisci YOUR_EMAIL@example.com -->
+        <form id="checkout-form" action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+          <label>Nome <input name="nome" required /></label>
+          <label>Cognome <input name="cognome" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Telefono <input name="telefono" required /></label>
+          <label>Indirizzo di spedizione <input name="indirizzo" required /></label>
+
+          <label>Metodo di pagamento:
+            <select name="pagamento" id="pagamento" required>
+              <option value="bonifico">Bonifico</option>
+              <option value="paypal">PayPal</option>
+              <option value="carta">Carta (via PayPal)</option>
+            </select>
+          </label>
+
+          <label>Note ordine:
+            <textarea name="note" rows="3"></textarea>
+          </label>
+
+          <!-- Hidden fields che JS popolerà -->
+          <input type="hidden" name="carrello" id="hidden-carrello" />
+          <input type="hidden" name="totale" id="hidden-totale" />
+
+          <div class="checkout-actions">
+            <button type="submit" class="btn primary">Invia ordine</button>
+            <a href="cart.html" class="btn">Modifica carrello</a>
+          </div>
+        </form>
+
+        <div class="payment-info">
+          <h3>Istruzioni pagamento</h3>
+          <div id="payment-boa">
+            <p><strong>Bonifico:</strong> IBAN: IT00X0000000000000000000 - Intestato a: Nome Azienda</p>
+            <p><strong>PayPal:</strong> paypal@tuosito.example</p>
+            <p><em>Per pagamenti con carta usa PayPal o contattaci.</em></p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>
