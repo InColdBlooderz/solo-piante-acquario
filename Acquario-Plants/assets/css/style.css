@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +5,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("Acquario-Plants/assets/img/hero.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
