@@ -5,11 +5,7 @@ body {
 
 .hero {
   height: 100vh;
-<<<<<<< HEAD:assets/css/style.css
-  background-image: url("/assets/img/hero.jpg");
-=======
   background-image: url("../img/hero.jpg");
->>>>>>> 26f2b930edbb11632909e99b268242b9cfd03e65:Acquario-Plants/assets/css/style.css
   background-size: cover;
   background-position: center;
   display: flex;
@@ -17,8 +13,4 @@ body {
   align-items: center;
   color: white;
   text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-<<<<<<< HEAD:assets/css/style.css
-}/workspaces/solo-piante-acquario/assets/img/hero.jpg
-=======
 }
->>>>>>> 26f2b930edbb11632909e99b268242b9cfd03e65:Acquario-Plants/assets/css/style.css
