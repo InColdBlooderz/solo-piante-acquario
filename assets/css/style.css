@@ -4,11 +4,7 @@ body {
 }
 
 .hero {
-<<<<<<< HEAD
-  height: 60vh;
-=======
   height: 100vh;
->>>>>>> 79404dd7484b53a976e28ef4cf6e3439701ca5f8
   background-image: url("assets/img/hero.jpg");
   background-size: cover;
   background-position: center;
