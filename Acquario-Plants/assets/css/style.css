@@ -6,7 +6,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("Acquario-Plants/assets/css/img/hero.jpg");
+  background-image: url("Acquario-Plants/assets/img/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
