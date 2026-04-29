@@ -6,7 +6,7 @@ body {
 .hero {
   height: 100vh;
 <<<<<<< HEAD:assets/css/style.css
-  background-image: url("/workspaces/solo-piante-acquario/assets/img/hero.jpg");
+  background-image: url("/assets/img/hero.jpg");
 =======
   background-image: url("../img/hero.jpg");
 >>>>>>> 26f2b930edbb11632909e99b268242b9cfd03e65:Acquario-Plants/assets/css/style.css
