@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 .hero {
   height: 100vh;
   background-image: url("assets/img/hero.jpg");
