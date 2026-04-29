@@ -1,72 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aquarium Plants Shop</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
 <body>
-  <header class="header">
-    <div class="logo">🌿 Aquatic Plants</div>
 
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="catalogo.html">CATALOGO</a>
-      <a href="order-info.html">COME ORDINARE</a>
-    </nav>
+  <!-- HEADER COMPONENT -->
+  <div id="header"></div>
 
-    <div class="auth">
-      <a href="#">LOGIN</a>
-      <a href="#">ISCRIVITI</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Piante per Acquario Premium</h1>
+      <p>Selezione professionale ispirata ai migliori vivaisti europei</p>
+
+      <a href="catalogo.html" class="btn-main">
+        Vai al Catalogo
+      </a>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Piante per Acquario<br>di Qualità Premium</h1>
-        <p>Scopri la nostra selezione professionale</p>
+  <!-- CONTENUTO BASE (opzionale per home) -->
+  <section class="home-info">
+    <h2>Benvenuto nel nostro shop</h2>
+    <p>
+      Piante acquatiche selezionate con cura per acquari naturali e aquascaping.
+    </p>
+  </section>
 
-        <a href="catalogo.html" class="btn-main">
-          SCOPRI IL CATALOGO →
-        </a>
-      </div>
-    </section>
-
-    <section class="wrap">
-      <div class="controls">
-        <label>
-          Cerca:
-          <input id="search" placeholder="Cerca per nome..." />
-        </label>
-
-        <label>
-          Difficoltà:
-          <select id="filter-difficulty">
-            <option value="">Tutte</option>
-            <option value="Facile">Facile</option>
-            <option value="Media">Media</option>
-            <option value="Alta">Alta</option>
-          </select>
-        </label>
-
-        <label>
-          Tipo:
-          <select id="filter-type">
-            <option value="">Tutti</option>
-            <option value="Foreground">Foreground</option>
-            <option value="Midground">Midground</option>
-            <option value="Background">Background</option>
-            <option value="Stem">Stem</option>
-            <option value="Rhizomatous">Rhizomatous</option>
-            <option value="Floating">Floating</option>
-            <option value="Bulb">Bulb</option>
-            <option value="Moss">Moss</option>
-          </select>
-        </label>
-      </div>
-
-      <section id="plant-list" class="catalogo"></section>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Solo Piante per Acquario — Rivenditore ufficiale</p>
-  </footer>
+  <!-- FOOTER COMPONENT -->
+  <div id="footer"></div>
 
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/cart.js"></script>
 </body>
+</html>
