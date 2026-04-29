@@ -1,3 +1,11 @@
-hero {
-  background: red !important;
+.hero {
+  height: 100vh;
+  background-image: url("assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
