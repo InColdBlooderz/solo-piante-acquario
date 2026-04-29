@@ -6,7 +6,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("Acquario-Plants/assets/css/style.css");
+  background-image: url("/workspaces/solo-piante-acquario/assets/img/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -14,4 +14,4 @@ body {
   align-items: center;
   color: white;
   text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-}
+}/workspaces/solo-piante-acquario/assets/img/hero.jpg
