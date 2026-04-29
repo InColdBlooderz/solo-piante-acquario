@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 .hero {
-  height: 100vh;
+  height: 70vh;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
