@@ -90,3 +90,19 @@ body { font-family: Inter, "Open Sans", Arial, sans-serif; margin:0; color:#222;
 .btn-main:hover {
   background: #16a34a;
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+}
+
+.header a {
+  color: #22c55e;
+  margin: 0 10px;
+  text-decoration: none;
+}
