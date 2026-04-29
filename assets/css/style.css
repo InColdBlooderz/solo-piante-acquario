@@ -4,8 +4,8 @@ body {
 }
 
 .hero {
-  height: 100vh;
-  background-image: url("../img/hero.jpg");
+  height: 60vh;
+  background-image: url("assets/img/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
