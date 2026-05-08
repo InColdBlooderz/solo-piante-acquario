@@ -1,3 +1,64 @@
+<section class="catalog-hero">
+  <div class="overlay">
+    <h1>Catalogo Piante Acquatiche</h1>
+    <p>Piante, fertilizzanti e layout per acquascaping</p>
+  </div>
+</section>
 <section id="plant-list" class="catalogo"></section>
 
 <script src="assets/js/app.js"></script>
+<div class="catalog-page">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+
+    <input id="search" placeholder="Cerca pianta...">
+
+    <h4>Ordina</h4>
+    <select id="sort">
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
+
+    <h4>Difficoltà</h4>
+    <select id="difficulty">
+      <option value="">Tutte</option>
+      <option value="Facile">Facile</option>
+      <option value="Media">Media</option>
+      <option value="Difficile">Difficile</option>
+    </select>
+
+    <h4>Posizione</h4>
+    <select id="position">
+      <option value="">Tutte</option>
+      <option value="Foreground">Primo piano</option>
+      <option value="Midground">Centro</option>
+      <option value="Background">Sfondo</option>
+      <option value="Moss">Muschio / Rocce</option>
+    </select>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- BANNER FEATURED -->
+    <div class="featured-banner">
+      <img src="assets/img/banner.jpg">
+      <div class="text">
+        <h2>Plants, Layout & Fertilizers</h2>
+      </div>
+    </div>
+
+    <!-- VIEW TOGGLE -->
+    <div class="view-toggle">
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
+    </div>
+
+    <!-- CATALOG -->
+    <section id="plant-list"></section>
+
+  </main>
+
+</div>
