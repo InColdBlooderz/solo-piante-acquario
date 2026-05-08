@@ -73,7 +73,7 @@ body {
 
 /* HERO */
 .hero {
-  height: 90vh;
+  height: 100vh;
 
   background-image: url('../img/hero.jpg');
   background-size: cover;
