@@ -240,11 +240,8 @@ body {
 }
 .catalog-hero {
   height: 320px;
-  background: url("../img/catalog.png") center/cover no-repeat;
+  background: url("/solo-piante-acquario/assets/img/catalog.png") center/cover no-repeat;
   position: relative;
-  border-radius: 12px;
-  margin: 20px;
-  overflow: hidden;
 }
 
 .catalog-hero .overlay {
