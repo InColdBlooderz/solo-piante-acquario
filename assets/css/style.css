@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* MENU */
+.nav-center a {
+  margin: 0 15px;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.nav-center a:hover {
+  color: #22c55e;
+}
+
+/* DESTRA */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* BOTTONI */
+.login-btn,
+.cart-btn {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.register-btn {
+  margin-left: 15px;
+
+  background: #22c55e;
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+/* OVERLAY */
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.45);
+}
+
+/* TESTO */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  color: white;
+
+  padding-left: 100px;
+
+  max-width: 600px;
+}
+
+/* TITOLO */
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+/* TESTO */
+.hero-content p {
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+/* BOTTONE */
+.btn-main {
+  display: inline-block;
+
+  background: #22c55e;
+  color: white;
+
+  padding: 16px 28px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background: #16a34a;
+}
