@@ -2,10 +2,13 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 .hero {
   height: 70vh;
+<<<<<<< HEAD
   background-image: url("assets/img/hero.jpg");
+=======
+  background-image: url("../img/hero.jpg");
+>>>>>>> 3689aada3e99eca21ba8c37156aa3a4418903cc4
   background-size: cover;
   background-position: center;
   display: flex;
